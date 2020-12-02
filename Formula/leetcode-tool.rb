@@ -2,16 +2,16 @@
 class LeetcodeTool < Formula
   desc "一个让你更方便刷题的工具"
   homepage "https://github.com/zcong1993/leetcode-tool"
-  version "0.3.0"
+  version "0.4.0"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/zcong1993/leetcode-tool/releases/download/v0.3.0/leetcode-tool_0.3.0_darwin_amd64.tar.gz"
-    sha256 "79f8a285f528b83f7b25da04a59ffb8e6c29c1457670725ee87806488221d597"
+    url "https://github.com/zcong1993/leetcode-tool/releases/download/v0.4.0/leetcode-tool_0.4.0_darwin_amd64.tar.gz"
+    sha256 "28f824d5cedec5e9714d8e77f0f50f357bb7d2e4c0295b617115f79f38965b18"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/zcong1993/leetcode-tool/releases/download/v0.3.0/leetcode-tool_0.3.0_linux_amd64.tar.gz"
-    sha256 "734c3b841c3fcab99cf8a5f92f92c1cc133153bae7bbcf37a8a406fcb58b654c"
+    url "https://github.com/zcong1993/leetcode-tool/releases/download/v0.4.0/leetcode-tool_0.4.0_linux_amd64.tar.gz"
+    sha256 "94743b6af01af774084f907906a9ccc0ad73600291decb6e2dc6735b087a2ee4"
   end
 
   def install
