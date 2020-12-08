@@ -2,16 +2,16 @@
 class ChangedFiles < Formula
   desc "go port jest-changed-files"
   homepage "https://github.com/zcong1993/changed-files"
-  version "0.1.1"
+  version "0.1.2"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/zcong1993/changed-files/releases/download/v0.1.1/changed-files_0.1.1_darwin_amd64.tar.gz"
-    sha256 "8bbd4ce702d322d3ce14295661cb61368dde5c31f8bc9eca71c558547cc1658b"
+    url "https://github.com/zcong1993/changed-files/releases/download/v0.1.2/changed-files_0.1.2_darwin_amd64.tar.gz"
+    sha256 "b7f22f8a1c95dfc723fe981d52c12dd3f7caf104bae26679d6b3f39ae7da3f43"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/zcong1993/changed-files/releases/download/v0.1.1/changed-files_0.1.1_linux_amd64.tar.gz"
-    sha256 "3a3a14e0d58751167343f5235336e15d1735cc862648161e93f4986e15db46ed"
+    url "https://github.com/zcong1993/changed-files/releases/download/v0.1.2/changed-files_0.1.2_linux_amd64.tar.gz"
+    sha256 "29f4ac4731bac8d051d0b9a1b3a0bc4f88524300f281b264c82e4662d3ce1199"
   end
 
   def install
