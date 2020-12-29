@@ -2,16 +2,16 @@
 class RssWatcher < Formula
   desc "Watch rss source"
   homepage "https://github.com/zcong1993/rss-watcher"
-  version "0.8.3"
+  version "0.9.0"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/zcong1993/rss-watcher/releases/download/v0.8.3/rss-watcher_0.8.3_Darwin_x86_64.tar.gz"
-    sha256 "1c66645bf9f56e83d7778cf0ef189c5f815b93cff9b037934104d43448e7e758"
+    url "https://github.com/zcong1993/rss-watcher/releases/download/v0.9.0/rss-watcher_0.9.0_Darwin_x86_64.tar.gz"
+    sha256 "4e908d1812c4bef16501bd0c92249adae87280c7d2f536601689638d8ff6695e"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/zcong1993/rss-watcher/releases/download/v0.8.3/rss-watcher_0.8.3_Linux_x86_64.tar.gz"
-    sha256 "462c90336b913ef0deb6ca3069aae60017cef210223154090589d99793fbaa68"
+    url "https://github.com/zcong1993/rss-watcher/releases/download/v0.9.0/rss-watcher_0.9.0_Linux_x86_64.tar.gz"
+    sha256 "d88cdda84474e4308da9a4af29671db772c589d3583ddbceb6327c9b6e0f56b2"
   end
 
   def install
