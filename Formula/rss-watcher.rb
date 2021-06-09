@@ -5,28 +5,28 @@
 class RssWatcher < Formula
   desc "Watch rss source"
   homepage "https://github.com/zcong1993/rss-watcher"
-  version "0.15.0"
+  version "0.15.1"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/zcong1993/rss-watcher/releases/download/v0.15.0/rss-watcher_0.15.0_Darwin_x86_64.tar.gz"
-      sha256 "58c0e18999aa059a37232cd443bd9409ef809e583ae4659f0566be7c94417ad6"
+      url "https://github.com/zcong1993/rss-watcher/releases/download/v0.15.1/rss-watcher_0.15.1_Darwin_x86_64.tar.gz"
+      sha256 "71aa0d654217abb75b2570034ec6549af40d1a98338f9239c2b740395e01ccf5"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/zcong1993/rss-watcher/releases/download/v0.15.0/rss-watcher_0.15.0_Darwin_arm64.tar.gz"
-      sha256 "2b07daa00508986774ad447a325cff9d8b6ff31cc09bbc8cd3f39a4a5965efac"
+      url "https://github.com/zcong1993/rss-watcher/releases/download/v0.15.1/rss-watcher_0.15.1_Darwin_arm64.tar.gz"
+      sha256 "b65683b7439ec013d34bac52813b1fd96c43dde5dc90b5b451fcf3c0551d4f79"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/zcong1993/rss-watcher/releases/download/v0.15.0/rss-watcher_0.15.0_Linux_x86_64.tar.gz"
-      sha256 "52fdb2053138468312d22c0b628a21770cd532fe84e135019dc4e1f0b7837607"
+      url "https://github.com/zcong1993/rss-watcher/releases/download/v0.15.1/rss-watcher_0.15.1_Linux_x86_64.tar.gz"
+      sha256 "3262836878300d907c24cae28a93ef2b36c6291d90cbc1967e4d745188e8f27a"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/zcong1993/rss-watcher/releases/download/v0.15.0/rss-watcher_0.15.0_Linux_arm64.tar.gz"
-      sha256 "18a22061a1e11dedd94b5989018b16acca06f52e6a397d6e69b8c97ed2c42511"
+      url "https://github.com/zcong1993/rss-watcher/releases/download/v0.15.1/rss-watcher_0.15.1_Linux_arm64.tar.gz"
+      sha256 "3c6a6dc2225bd6fff0b8cc0b60c214f38586ca65eeb7c0c5e0640e1f37862d1a"
     end
   end
 
