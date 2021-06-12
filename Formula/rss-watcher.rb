@@ -5,28 +5,28 @@
 class RssWatcher < Formula
   desc "Watch rss source"
   homepage "https://github.com/zcong1993/rss-watcher"
-  version "0.15.1"
+  version "0.20.0"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/zcong1993/rss-watcher/releases/download/v0.15.1/rss-watcher_0.15.1_Darwin_x86_64.tar.gz"
-      sha256 "71aa0d654217abb75b2570034ec6549af40d1a98338f9239c2b740395e01ccf5"
+      url "https://github.com/zcong1993/rss-watcher/releases/download/v0.20.0/rss-watcher_0.20.0_Darwin_x86_64.tar.gz"
+      sha256 "202813293e86ab52792dd9f13fa19a26666ea9a6a87477f0281f9a08ebcd0f87"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/zcong1993/rss-watcher/releases/download/v0.15.1/rss-watcher_0.15.1_Darwin_arm64.tar.gz"
-      sha256 "b65683b7439ec013d34bac52813b1fd96c43dde5dc90b5b451fcf3c0551d4f79"
+      url "https://github.com/zcong1993/rss-watcher/releases/download/v0.20.0/rss-watcher_0.20.0_Darwin_arm64.tar.gz"
+      sha256 "b71bbef65a74bd8dfdd3ff53a2d5e41029cb9431fc3607cd040c8fda06d95289"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/zcong1993/rss-watcher/releases/download/v0.15.1/rss-watcher_0.15.1_Linux_x86_64.tar.gz"
-      sha256 "3262836878300d907c24cae28a93ef2b36c6291d90cbc1967e4d745188e8f27a"
+      url "https://github.com/zcong1993/rss-watcher/releases/download/v0.20.0/rss-watcher_0.20.0_Linux_x86_64.tar.gz"
+      sha256 "70a4c2575ddb2fd14ac15f155cc193a4fa574451d99bce8167dc4011da19b6a8"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/zcong1993/rss-watcher/releases/download/v0.15.1/rss-watcher_0.15.1_Linux_arm64.tar.gz"
-      sha256 "3c6a6dc2225bd6fff0b8cc0b60c214f38586ca65eeb7c0c5e0640e1f37862d1a"
+      url "https://github.com/zcong1993/rss-watcher/releases/download/v0.20.0/rss-watcher_0.20.0_Linux_arm64.tar.gz"
+      sha256 "c6a6a8991c264d3f33d6f9fc24b3a23d5a6181e6aa40b8eb441faefb7faf3d47"
     end
   end
 
@@ -35,6 +35,6 @@ class RssWatcher < Formula
   end
 
   test do
-    system "#{bin}/rss-watcher -v"
+    system "#{bin}/rss-watcher --version"
   end
 end
