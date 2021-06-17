@@ -5,20 +5,20 @@
 class Gcommitter < Formula
   desc "Easy way of git commit and push"
   homepage "https://github.com/zcong1993/gcommitter"
-  version "2.0.5"
+  version "2.1.0"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/zcong1993/gcommitter/releases/download/v2.0.5/gcommitter_2.0.5_darwin_amd64.tar.gz"
-      sha256 "966941cf550e6948769d0374cb2a67c252dd3452c6a7f08c62c04d434f7206e6"
+      url "https://github.com/zcong1993/gcommitter/releases/download/v2.1.0/gcommitter_2.1.0_darwin_amd64.tar.gz"
+      sha256 "8664fb279432616fba21fbcc98a0c1e53ddbfa84bf7fdb8487fefe500ba27135"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/zcong1993/gcommitter/releases/download/v2.0.5/gcommitter_2.0.5_linux_amd64.tar.gz"
-      sha256 "fc88c5bd1609461556e8ce3102427d29dfaeace29c4ed18a30a7647e5dd1b0d9"
+      url "https://github.com/zcong1993/gcommitter/releases/download/v2.1.0/gcommitter_2.1.0_linux_amd64.tar.gz"
+      sha256 "e9ae551f560c33292e369b4af25393d3ccaf4c10685dca35f068abfe95e0c188"
     end
   end
 
