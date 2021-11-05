@@ -6,7 +6,6 @@ class LeetcodeTool < Formula
   desc "一个让你更方便刷题的工具"
   homepage "https://github.com/zcong1993/leetcode-tool"
   version "0.4.1"
-  bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?

@@ -3,7 +3,6 @@ class DownloadRelease < Formula
   desc "Easy download github release"
   homepage "https://github.com/zcong1993/download-release"
   version "0.1.1"
-  bottle :unneeded
 
   if OS.mac?
     url "https://github.com/zcong1993/download-release/releases/download/v0.1.1/download-release_0.1.1_darwin_amd64.tar.gz"

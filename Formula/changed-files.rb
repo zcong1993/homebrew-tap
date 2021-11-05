@@ -3,7 +3,6 @@ class ChangedFiles < Formula
   desc "go port jest-changed-files"
   homepage "https://github.com/zcong1993/changed-files"
   version "0.1.3"
-  bottle :unneeded
 
   if OS.mac?
     url "https://github.com/zcong1993/changed-files/releases/download/v0.1.3/changed-files_0.1.3_darwin_amd64.tar.gz"

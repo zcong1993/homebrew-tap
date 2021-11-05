@@ -3,7 +3,6 @@ class ChangedFilesRs < Formula
   desc "rust port jest-changed-files"
   homepage "https://github.com/zcong1993/changed-files-rs"
   version "0.1.9"
-  bottle :unneeded
 
   if OS.mac?
     url "https://github.com/zcong1993/changed-files-rs/releases/download/v0.1.9/changed-files-rs-x86_64-apple-darwin.tar.gz"

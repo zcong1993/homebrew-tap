@@ -6,7 +6,6 @@ class RssWatcher < Formula
   desc "Watch rss source"
   homepage "https://github.com/zcong1993/rss-watcher"
   version "0.21.3"
-  bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?

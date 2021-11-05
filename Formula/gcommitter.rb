@@ -6,7 +6,6 @@ class Gcommitter < Formula
   desc "Easy way of git commit and push"
   homepage "https://github.com/zcong1993/gcommitter"
   version "2.2.0"
-  bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
