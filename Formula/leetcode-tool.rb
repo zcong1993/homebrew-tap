@@ -5,24 +5,44 @@
 class LeetcodeTool < Formula
   desc "一个让你更方便刷题的工具"
   homepage "https://github.com/zcong1993/leetcode-tool"
-  version "0.4.1"
+  version "0.4.4"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/zcong1993/leetcode-tool/releases/download/v0.4.1/leetcode-tool_0.4.1_darwin_amd64.tar.gz"
-      sha256 "a7487312872c0ae8dce624a6154b44a179aec2bd4fb3dd8daf07c1d369920458"
+      url "https://github.com/zcong1993/leetcode-tool/releases/download/v0.4.4/leetcode-tool_0.4.4_Darwin_x86_64.tar.gz"
+      sha256 "abb5f85d216a522e5a004103d2d01296bf37d82f4518f56d88f4c04b3af3d53d"
+
+      def install
+        bin.install "leetcode-tool"
+      end
+    end
+    if Hardware::CPU.arm?
+      url "https://github.com/zcong1993/leetcode-tool/releases/download/v0.4.4/leetcode-tool_0.4.4_Darwin_arm64.tar.gz"
+      sha256 "cc587ddfa3dd5a3270623c40c32839d2bbec4075345bcaeda5053d81eac87a06"
+
+      def install
+        bin.install "leetcode-tool"
+      end
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/zcong1993/leetcode-tool/releases/download/v0.4.1/leetcode-tool_0.4.1_linux_amd64.tar.gz"
-      sha256 "ea3336641107e787cd92cf08aaf76eefe6ab6ca1c264254845c0be0a12958b2d"
-    end
-  end
+      url "https://github.com/zcong1993/leetcode-tool/releases/download/v0.4.4/leetcode-tool_0.4.4_Linux_x86_64.tar.gz"
+      sha256 "8491deef4d0512708d7dc5b8ace7cae4e840d4924f6174907bf3558491429356"
 
-  def install
-    bin.install "leetcode-tool"
+      def install
+        bin.install "leetcode-tool"
+      end
+    end
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/zcong1993/leetcode-tool/releases/download/v0.4.4/leetcode-tool_0.4.4_Linux_arm64.tar.gz"
+      sha256 "122a620f2760fa18be2b77b291c1820ad64144b3f42b0131bcb7675df3a330a7"
+
+      def install
+        bin.install "leetcode-tool"
+      end
+    end
   end
 
   test do
