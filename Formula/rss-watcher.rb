@@ -5,12 +5,20 @@
 class RssWatcher < Formula
   desc "Watch rss source"
   homepage "https://github.com/zcong1993/rss-watcher"
-  version "0.22.0"
+  version "0.22.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/zcong1993/rss-watcher/releases/download/v0.22.0/rss-watcher_0.22.0_Darwin_x86_64.tar.gz"
-      sha256 "7b1b8c6a31e6c44d60daeb9cc42d7198cf2d86db687f4873fde48c068b4fc52c"
+      url "https://github.com/zcong1993/rss-watcher/releases/download/v0.22.1/rss-watcher_0.22.1_Darwin_x86_64.tar.gz"
+      sha256 "f04de81092159d411b13575f4bbbde944c25405b12d9aa8ee98549d427a7599e"
+
+      def install
+        bin.install "rss-watcher"
+      end
+    end
+    if Hardware::CPU.arm?
+      url "https://github.com/zcong1993/rss-watcher/releases/download/v0.22.1/rss-watcher_0.22.1_Darwin_arm64.tar.gz"
+      sha256 "0b6b263272f35a3ec816fcb7fdbf295c7b3323115014fd01c037f2381402c83c"
 
       def install
         bin.install "rss-watcher"
@@ -20,16 +28,16 @@ class RssWatcher < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/zcong1993/rss-watcher/releases/download/v0.22.0/rss-watcher_0.22.0_Linux_x86_64.tar.gz"
-      sha256 "4c2f8fb685bcbc2af7b7d0b66bea79153ed76b620fdc080cbf441bdf6c7dc06f"
+      url "https://github.com/zcong1993/rss-watcher/releases/download/v0.22.1/rss-watcher_0.22.1_Linux_x86_64.tar.gz"
+      sha256 "13659b330033cc24851780a77d09d1e574fd9d3de8f269864077afdc67ae0800"
 
       def install
         bin.install "rss-watcher"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/zcong1993/rss-watcher/releases/download/v0.22.0/rss-watcher_0.22.0_Linux_arm64.tar.gz"
-      sha256 "39155e3d1d96e2cd9c0b2c1b4ba57ffa8cc6435826bf74c65d70ba5c7e728bfe"
+      url "https://github.com/zcong1993/rss-watcher/releases/download/v0.22.1/rss-watcher_0.22.1_Linux_arm64.tar.gz"
+      sha256 "e172d5f5216ac44b954bb83a84e257d136a69530d17c01d51cfe9087b8a38e78"
 
       def install
         bin.install "rss-watcher"
