@@ -5,28 +5,36 @@
 class RssWatcher < Formula
   desc "Watch rss source"
   homepage "https://github.com/zcong1993/rss-watcher"
-  version "0.21.3"
+  version "0.22.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/zcong1993/rss-watcher/releases/download/v0.21.3/rss-watcher_0.21.3_Darwin_x86_64.tar.gz"
-      sha256 "5c0ec773524b36cddaba66f91c21812b93b3cd04f0c635beb8faa93d7b357c55"
+      url "https://github.com/zcong1993/rss-watcher/releases/download/v0.22.0/rss-watcher_0.22.0_Darwin_x86_64.tar.gz"
+      sha256 "7b1b8c6a31e6c44d60daeb9cc42d7198cf2d86db687f4873fde48c068b4fc52c"
+
+      def install
+        bin.install "rss-watcher"
+      end
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/zcong1993/rss-watcher/releases/download/v0.21.3/rss-watcher_0.21.3_Linux_x86_64.tar.gz"
-      sha256 "40467bba3ab1fb7b5f8ea10f5d4c7faf052bbb686ad1096571a91c6b9df89549"
+      url "https://github.com/zcong1993/rss-watcher/releases/download/v0.22.0/rss-watcher_0.22.0_Linux_x86_64.tar.gz"
+      sha256 "4c2f8fb685bcbc2af7b7d0b66bea79153ed76b620fdc080cbf441bdf6c7dc06f"
+
+      def install
+        bin.install "rss-watcher"
+      end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/zcong1993/rss-watcher/releases/download/v0.21.3/rss-watcher_0.21.3_Linux_arm64.tar.gz"
-      sha256 "10a5c759f68f5bb3c6c6ed34e1aa10486c20bfe291a1d30f852b05464082af51"
-    end
-  end
+      url "https://github.com/zcong1993/rss-watcher/releases/download/v0.22.0/rss-watcher_0.22.0_Linux_arm64.tar.gz"
+      sha256 "39155e3d1d96e2cd9c0b2c1b4ba57ffa8cc6435826bf74c65d70ba5c7e728bfe"
 
-  def install
-    bin.install "rss-watcher"
+      def install
+        bin.install "rss-watcher"
+      end
+    end
   end
 
   test do
