@@ -5,24 +5,36 @@
 class Gcommitter < Formula
   desc "Easy way of git commit and push"
   homepage "https://github.com/zcong1993/gcommitter"
-  version "2.2.0"
+  version "2.2.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/zcong1993/gcommitter/releases/download/v2.2.0/gcommitter_2.2.0_darwin_amd64.tar.gz"
-      sha256 "2285b36566173d47b311e8951da2478f08f02a4fc6d3e0465aa6e73fdcc58b38"
+      url "https://github.com/zcong1993/gcommitter/releases/download/v2.2.1/gcommitter_2.2.1_Darwin_x86_64.tar.gz"
+      sha256 "4e428841ac18ecbe42e4461bb19ff76742ba82d415f8038701db96cb25ebef46"
+
+      def install
+        bin.install "gcommitter"
+      end
     end
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/zcong1993/gcommitter/releases/download/v2.2.0/gcommitter_2.2.0_linux_amd64.tar.gz"
-      sha256 "e8709c6a1ab43c2ce78118f1689a694ab2f3198c77892d09785385ab02754c3f"
-    end
-  end
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/zcong1993/gcommitter/releases/download/v2.2.1/gcommitter_2.2.1_Linux_arm64.tar.gz"
+      sha256 "b59cf2338a16cd37b8c86727d3a7d4c61367b2cd6f02be3685e23ea393714dac"
 
-  def install
-    bin.install "gcommitter"
+      def install
+        bin.install "gcommitter"
+      end
+    end
+    if Hardware::CPU.intel?
+      url "https://github.com/zcong1993/gcommitter/releases/download/v2.2.1/gcommitter_2.2.1_Linux_x86_64.tar.gz"
+      sha256 "0d04290bb52b7daa038e23a693e934e1186a9a5d2d93ab022a4f3c6735aa8c23"
+
+      def install
+        bin.install "gcommitter"
+      end
+    end
   end
 
   test do
