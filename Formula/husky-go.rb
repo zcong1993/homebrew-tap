@@ -5,20 +5,20 @@
 class HuskyGo < Formula
   desc "husky git hooks manager in go"
   homepage "https://github.com/zcong1993/husky-go"
-  version "0.1.1"
+  version "8.0.0"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/zcong1993/husky-go/releases/download/v0.1.1/husky-go_0.1.1_Darwin_arm64.tar.gz"
-      sha256 "6e1e35a3d69068828a44e917b92db78e8e83a9a6b00ed1d44caffb426832bc50"
+    if Hardware::CPU.intel?
+      url "https://github.com/zcong1993/husky-go/releases/download/v8.0.0/husky-go_8.0.0_Darwin_x86_64.tar.gz"
+      sha256 "4c3fe66a87b415bf0609466cf66e6d7808f866d5de09fe5d678341aa2a07624d"
 
       def install
         bin.install "husky-go"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/zcong1993/husky-go/releases/download/v0.1.1/husky-go_0.1.1_Darwin_x86_64.tar.gz"
-      sha256 "86111137917c57f56271f873b0b1f4e4ec541440796b5cdc2f8a4ab348a61eb1"
+    if Hardware::CPU.arm?
+      url "https://github.com/zcong1993/husky-go/releases/download/v8.0.0/husky-go_8.0.0_Darwin_arm64.tar.gz"
+      sha256 "dd05bab7d6817fcbe10fa2dc9210e4915bb2116b45f6fe6a739f4d9dd530ebfe"
 
       def install
         bin.install "husky-go"
@@ -27,17 +27,17 @@ class HuskyGo < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/zcong1993/husky-go/releases/download/v0.1.1/husky-go_0.1.1_Linux_arm64.tar.gz"
-      sha256 "a5d9b2560f055cca0917ed17b60159ae2238d39b95b32fd06b3be24e72791d3a"
+    if Hardware::CPU.intel?
+      url "https://github.com/zcong1993/husky-go/releases/download/v8.0.0/husky-go_8.0.0_Linux_x86_64.tar.gz"
+      sha256 "d870cf65c0d895186d5e4e7948efcb5173fb52481dffdfa76103dad58191aa21"
 
       def install
         bin.install "husky-go"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/zcong1993/husky-go/releases/download/v0.1.1/husky-go_0.1.1_Linux_x86_64.tar.gz"
-      sha256 "96a06cb70cf654b275f714adaee2eafb74bd2c9db1310aa1b9941b8cb2c97632"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/zcong1993/husky-go/releases/download/v8.0.0/husky-go_8.0.0_Linux_arm64.tar.gz"
+      sha256 "a95397cefe6cbfa177b160648acac6f0b1cfea0d453bd458944e3797fbde0cc5"
 
       def install
         bin.install "husky-go"
