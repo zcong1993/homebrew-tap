@@ -2,11 +2,11 @@
 class ChangedFilesRs < Formula
   desc "rust port jest-changed-files"
   homepage "https://github.com/zcong1993/changed-files-rs"
-  version "0.1.10"
+  version "0.1.11"
 
   if OS.mac?
-    url "https://github.com/zcong1993/changed-files-rs/releases/download/v0.1.10/changed-files-rs-x86_64-apple-darwin.tar.gz"
-    sha256 "7131d8e6650f8456401402856b4be76fd92c17e150722d3c5921749328b21f04"
+    url "https://github.com/zcong1993/changed-files-rs/releases/download/v0.1.11/changed-files-rs-x86_64-apple-darwin.tar.gz"
+    sha256 "58491d45b15a7a9c97c81e8d13588765200a06533f0bc5b4d48a2882cf961f82"
   end
 
   def install
